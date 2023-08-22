@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.aperekoden_slayda {
+  height: 100%;
+  width: 100%;
+}
+
+.aperekoden_slayda .smena_slada {
+  margin: 0 auto;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.aperekoden_slayda .smena_slada .asnapoka {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 90vh;
+}
+
+.h1__slide {
+  font-size: 60px;
+  position: relative;
+  top: 60%;
+}
+
+.aperekoden_slayda .smena_slada .asnapoka:nth-child(1) {
+  -webkit-animation: sliderFade-1 15s linear infinite;
+  animation: sliderFade-1 15s linear infinite;
+}
+
+.aperekoden_slayda .smena_slada .asnapoka:nth-child(2) {
+  -webkit-animation: sliderFade-2 15s linear infinite;
+  animation: sliderFade-2 15s linear infinite;
+}
+
+.aperekoden_slayda .smena_slada .asnapoka:nth-child(3) {
+  -webkit-animation: sliderFade-3 15s linear infinite;
+  animation: sliderFade-3 15s linear infinite;
+}
+
+@keyframes sliderFade-1 {
+  0% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sliderFade-2 {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sliderFade-3 {
+  0% {
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+nav > ul {
+  padding: 0;
+  display: flex;
+}
+li {
+  list-style: none;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+label {
+  display: none;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  right: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  nav label {
+    display: block;
+  }
+  nav > ul {
+    display: none;
+  }
+  .header__a {
+    color: #000;
+  }
+  nav ul li {
+    position: relative;
+
+    text-align: left;
+    right: 58px;
+    padding: 15px;
+    background-color: #ff0000;
+  }
+  nav ul li:first-child {
+    margin-top: 15px;
+  }
+  input[type="checkbox"]:checked ~ label + #ul {
+    z-index: 9999999;
+    position: absolute;
+    display: block;
+  }
+}
