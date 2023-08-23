@@ -87,15 +87,8 @@ body {
   display: flex;
   justify-content: center;
 }
-.city__button {
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
-  margin-right: 50px;
-  margin-top: 30px;
-}
-.city__button::after {
+
+.li::after {
   position: absolute;
   content: "";
   left: 0;
@@ -105,19 +98,52 @@ body {
   height: 2px;
   background: #fff;
 }
-.city__button::after {
+.li::after {
   width: 0;
   transition: 0.3s;
 }
-.city__button:hover:after {
+.li:hover:after {
   width: 100%;
 }
 .vibot__item {
   width: 100%;
   max-width: 1920px;
+}
+.ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.li {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.hide2 {
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 0.4ss;
+  animation-fill-mode: forwards;
+}
+@keyframes a1 {
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
 }
 @media screen and (max-width: 750px) {
   .card__section {
@@ -162,12 +188,14 @@ body {
 .card__name {
   letter-spacing: 0.06em;
   text-align: center;
-  text-transform: uppercase;
+
   margin-top: 10px;
 }
 .card__section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
   margin-left: 60px;
 }
 .hide1 {
