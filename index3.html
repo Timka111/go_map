@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +12,7 @@
     />
     <link rel="stylesheet" href="style/auto-slider.css" />
     <link rel="stylesheet" href="style/style2.css" />
-    <title>Путешествия</title>
+    <title>Популярное</title>
   </head>
   <body>
     <div class="container">
@@ -33,9 +32,9 @@
             <ul id="ul">
               <li><a class="header__a" href="index.html">Главная</a></li>
               <li>
-                <a class="header__a" href="#">Популярное</a>
+                <a class="header__a" href="index2.html">Популярное</a>
               </li>
-              <li><a class="header__a" href="index3.html">Путешествия</a></li>
+              <li><a class="header__a" href="#">Путешествия</a></li>
             </ul>
           </nav>
 
@@ -46,12 +45,26 @@
       </header>
       <section class="vibor">
         <div class="vibor__section">
-          <h2 class="name__title">Самые популярные места Беларуси</h2>
-
+          <div class="vibot__item">
+            <a href="" class="city__button">Минская</a>
+            <a href="" class="city__button">Витебская</a>
+            <a href="" class="city__button">Гомельская</a>
+            <a href="" class="city__button">Бресткая</a>
+            <a href="" class="city__button">Гродненская</a>
+            <a href="" class="city__button">Могилевская</a>
+          </div>
+          <div class="input__section">
+            <input class="input" type="text" placeholder="Поиск" />
+          </div>
           <div class="card__section">
             <div class="card">
               <img src="img/4.jpg" alt="" class="card__img" />
-              <h3 class="card__name">Мирский замок</h3>
+              <h3 class="card__name">Молодечненский замок</h3>
+              <a href="" class="card__button">Узнать больше</a>
+            </div>
+            <div class="card">
+              <img src="img/4.jpg" alt="" class="card__img" />
+              <h3 class="card__name">Несвижский замок</h3>
               <a href="" class="card__button">Узнать больше</a>
             </div>
             <div class="card">
@@ -61,34 +74,29 @@
             </div>
             <div class="card">
               <img src="img/4.jpg" alt="" class="card__img" />
-              <h3 class="card__name">Мирский замок</h3>
+              <h3 class="card__name">Минский замок</h3>
               <a href="" class="card__button">Узнать больше</a>
             </div>
             <div class="card">
               <img src="img/4.jpg" alt="" class="card__img" />
-              <h3 class="card__name">Мирский замок</h3>
+              <h3 class="card__name">Гомельский замок</h3>
               <a href="" class="card__button">Узнать больше</a>
             </div>
             <div class="card">
               <img src="img/4.jpg" alt="" class="card__img" />
-              <h3 class="card__name">Мирский замок</h3>
+              <h3 class="card__name">Лругой замок</h3>
               <a href="" class="card__button">Узнать больше</a>
             </div>
             <div class="card">
               <img src="img/4.jpg" alt="" class="card__img" />
-              <h3 class="card__name">Мирский замок</h3>
-              <a href="" class="card__button">Узнать больше</a>
-            </div>
-            <div class="card">
-              <img src="img/4.jpg" alt="" class="card__img" />
-              <h3 class="card__name">Мирский замок</h3>
+              <h3 class="card__name">Третий замок</h3>
               <a href="" class="card__button">Узнать больше</a>
             </div>
           </div>
         </div>
       </section>
     </div>
+    <script src="sckript/search.js"></script>
     <script src="sckript/header.js"></script>
-    <script src="sckript.js"></script>
   </body>
 </html>
