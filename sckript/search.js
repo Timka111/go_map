@@ -28,9 +28,9 @@ document.querySelector(".ul").addEventListener("click", (event) => {
   let filterClass = event.target.dataset["f"];
 
   filterBox.forEach((elem) => {
-    elem.classList.remove("hide2");
+    elem.classList.remove("hide1");
     if (!elem.classList.contains(filterClass) && filterClass !== "all") {
-      elem.classList.add("hide2");
+      elem.classList.add("hide1");
     }
   });
 });
