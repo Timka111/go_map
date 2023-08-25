@@ -2,7 +2,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("../img/3.jpg");
+  background-image: url("https://i.artfile.ru/1920x1246_1033014_[www.ArtFile.ru].jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -99,106 +99,121 @@ body {
 .card__section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  float: left;
   margin-top: 30px;
+  margin-left: 50px;
 }
 .hide1 {
   display: none;
 }
 
+.card:hover .card__title {
+  display: none;
+}
 .card {
-  width: 200px;
-  height: 300px;
-  margin: 0 auto;
-  background: white;
-  padding: 0 0 20px;
-  text-align: center;
-  font-size: 14px;
-  text-transform: uppercase;
-  border: 1px solid #000;
-  margin-top: 30px;
-  border-radius: 15px;
-}
-.product-item {
   position: relative;
+  width: 280px;
+  height: 400px;
+  background: #000;
+  border-radius: 18px;
   overflow: hidden;
+  margin-right: 40px;
+  margin-top: 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
 }
-.card img {
-  display: block;
-  width: 100%;
-  height: 170px;
-  border-radius: 15px 15px 0 0;
-}
-.product-buttons {
-  position: absolute;
-  left: 0;
+
+.poster {
+  position: relative;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-  border-radius: 15px 15px 0 0;
-}
-.button3 {
-  text-decoration: none;
-  color: #c0a97a;
-  font-size: 12px;
-  width: 140px;
-  height: 40px;
-  line-height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 2px solid #c0a97a;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 0.3s ease-in-out;
-  border-radius: 15px;
+  overflow: hidden;
 }
 
-.product-item:hover .product-buttons {
-  opacity: 1;
-}
-
-.product-item:hover .button3 {
-  transform: translate(-50%, -50%) scale(1);
-}
-.button3:hover {
-  background: black;
-}
-.product-title {
-  color: #5e5e5e;
-}
-.product-title a {
-  text-decoration: none;
-  color: #2e2e2e;
-  font-weight: 600;
-  margin: 15px 0 5px;
-  padding-bottom: 7px;
-  display: block;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  margin-top: 70px;
-}
-.product-title a:after {
+.poster::before {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 2px;
-  background: #2e2e2e;
-  left: 50%;
-  margin-left: -20px;
+  bottom: -45%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.card:hover .poster::before {
   bottom: 0;
-  transition: 0.3s ease-in-out;
 }
-.product-title a:hover {
-  color: #c0a97a;
+
+.poster img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
 }
-.product-title:hover a:after {
-  background: #c0a97a;
+
+.card:hover .poster img {
+  transform: scale(1.1);
 }
-.product-price {
-  font-size: 20px;
-  color: #c0a97a;
+
+.details {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.5em 1.5em 2em;
+  background: #000a;
+  backdrop-filter: blur(16px) saturate(120%);
+  transition: 0.3s;
+  color: #fff;
+  z-index: 2;
+}
+
+.card:hover .details {
+  bottom: 0;
+}
+
+.details h1,
+.details h2 {
   font-weight: 700;
+}
+
+.details h1 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.details h2 {
+  font-weight: 400;
+  font-size: 1em;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+.details .rating {
+  position: relative;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 0.25em;
+}
+
+.button4 {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  border: #fff 1px solid;
+  padding: 5px 10px;
+  width: 140px;
+  opacity: 0.5;
+  transition: opacity 0.4s;
+  text-align: center;
+}
+.button4:hover {
+  opacity: 1;
 }
