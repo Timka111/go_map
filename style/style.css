@@ -36,7 +36,7 @@
   min-height: 100vh;
 }
 .belarus__name {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,4 +54,56 @@
   font-size: 20px;
   max-width: 720px;
   margin-top: 30px;
+}
+.symbol {
+  background: #f2e6de;
+  min-height: 100vh;
+}
+.symbol__title {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 40px;
+}
+.symbol__section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.img__item {
+  width: 250px;
+  height: 150px;
+  margin-top: 80px;
+}
+.img__item1 {
+  width: 200px;
+  margin-top: 40px;
+}
+.symbol_item {
+  width: 400px;
+  height: 400px;
+  background: #fff;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.belarus__map {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+}
+.li__map span {
+  opacity: 0.6;
+  display: block;
+  font-size: 20px;
+}
+.li__map {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 40px;
 }
