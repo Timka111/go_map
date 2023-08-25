@@ -3,240 +3,6 @@
   padding: 0;
 }
 
-.section {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  color: #222;
-  text-transform: uppercase;
-  font-size: 2.8em;
-  font-weight: 700;
-}
-.full {
-  height: 100vh;
-  background: #e0e0e0;
-}
-.half {
-  height: 50vh;
-  background: #e0e0e0;
-}
-.mini {
-  height: 25vh;
-  background: #e0e0e0;
-}
-
-.banner {
-  color: #e8e8e8;
-  display: flex;
-  align-items: stretch;
-}
-
-/* first banner */
-
-.banner3d-1 {
-  width: 100%;
-  perspective: 700px;
-  -webkit-transform-style: flat; /* why would I do that? well there is a very strange bug with safari, and it fixed it... */
-  transform-style: preserve-3d;
-}
-
-.banner3d-1-front {
-  padding: 50px;
-  background: #222;
-
-  transform-style: preserve-3d;
-}
-
-.banner3d-1-front:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 50px;
-  background-color: #bfbfbf;
-  top: -50px;
-  transform-origin: center bottom;
-  transform: rotatex(90deg);
-}
-
-.banner3d-1-front:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 50px;
-  background-color: #bfbfbf;
-  bottom: -50px;
-  transform-origin: center top;
-  transform: rotatex(-90deg);
-}
-
-/* second banner */
-
-.banner3d-2 {
-  width: 100%;
-  perspective: 700px;
-  -webkit-transform-style: flat;
-  transform-style: preserve-3d;
-  z-index: -1;
-}
-
-.banner3d-2-front {
-  padding: 50px;
-  background: #222;
-  transform-style: preserve-3d;
-}
-
-.banner3d-2-front:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 50px;
-  background-color: #bfbfbf;
-  top: -50px;
-  transform-origin: center bottom;
-  transform: rotatex(-90deg);
-}
-
-.banner3d-2-front:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 50px;
-  background-color: #bfbfbf;
-  bottom: -50px;
-  transform-origin: center top;
-  transform: rotatex(90deg);
-}
-
-/* 3rd banner */
-
-.banner3d-3 {
-  width: 50%;
-  perspective: 700px;
-  -webkit-transform-style: flat;
-  transform-style: preserve-3d;
-}
-
-.banner3d-3-front {
-  padding: 100px 25px;
-  text-align: center;
-  background: #222;
-  transform-style: preserve-3d;
-}
-
-.banner3d-3-front:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 50px;
-  background-color: #404040;
-  top: -50px;
-  transform-origin: center bottom;
-  transform: rotatex(90deg);
-}
-
-.banner3d-3-front:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 50px;
-  background-color: #404040;
-  bottom: -50px;
-  transform-origin: center top;
-  transform: rotatex(-90deg);
-}
-
-.image {
-  width: 50%;
-  background: url(https://source.unsplash.com/IyaNci0CyRk/600x600) no-repeat;
-  background-size: cover;
-  background-position: center;
-  box-shadow: inset 25px 0px 20px 10px rgba(0, 0, 0, 0.41);
-}
-
-/* fourth banner */
-
-.banner3d-4 {
-  width: 60%;
-  perspective: 700px;
-  -webkit-transform-style: flat;
-  transform-style: preserve-3d;
-  z-index: -1;
-}
-
-.banner3d-4-front {
-  padding: 25px;
-  background: #222;
-  transform: translatez(-50px);
-  transform-style: preserve-3d;
-}
-
-.banner3d-4-front:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 50px;
-  background-color: #bfbfbf;
-  top: -50px;
-  transform-origin: center bottom;
-  transform: rotatex(-90deg);
-}
-
-.banner3d-4-front:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  left: 0;
-  height: 50px;
-  background-color: #bfbfbf;
-  bottom: -50px;
-  transform-origin: center top;
-  transform: rotatex(90deg);
-}
-
-.image2 {
-  width: 40%;
-  background: url(https://source.unsplash.com/gJJhG4gM7NA/600x600) no-repeat;
-  background-size: cover;
-  background-position: center center;
-  border: 20px solid #e0e0e0;
-  box-sizing: border-box;
-}
-
-@media (max-width: 991px) {
-  section {
-    font-size: 2em;
-  }
-  .banner {
-    flex-direction: column;
-  }
-  .banner3d-3,
-  .banner3d-4 {
-    width: 100%;
-  }
-  .image,
-  .image2 {
-    width: 100%;
-    height: 300px;
-  }
-}
 .footer {
   background: #000;
   height: 120px;
@@ -265,4 +31,27 @@ section {
     display: block;
     padding-top: 30px;
   }
+}
+.from__belarus {
+  min-height: 100vh;
+}
+.belarus__name {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.belarus__name__title {
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.belarus__info {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  max-width: 720px;
+  margin-top: 30px;
 }
