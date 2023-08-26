@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
 }
-
+body {
+  background-image: url(/go_map/img/glav.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  width: 100%;
+}
 .footer {
   background: #000;
   height: 120px;
@@ -40,6 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
 }
 .belarus__name__title {
   text-align: center;
@@ -96,14 +104,73 @@
   flex-wrap: wrap;
   min-height: 100vh;
   align-items: center;
+  margin-bottom: 60px;
+}
+.map__info {
+  background: #fff;
 }
 .li__map span {
   opacity: 0.6;
   display: block;
   font-size: 20px;
 }
+.map_sec {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 70vh;
+  width: 720px;
+  max-width: 100%;
+  align-items: center;
+  background: #fff;
+}
 .li__map {
   font-size: 16px;
   font-weight: 700;
   margin-top: 40px;
+  opacity: 1;
+}
+.belarus__map img {
+  max-width: 100%;
+  opacity: 1;
+  background: #fff;
+}
+.region__title {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 40px;
+}
+.region {
+  background: #fff;
+}
+.region__item {
+  text-align: center;
+  margin-top: 80px;
+  background: #f2e6de;
+  min-height: 70vh;
+}
+.region__name {
+  font-size: 25px;
+  padding-top: 50px;
+}
+.region__img {
+  width: 400px;
+}
+.region__info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.region__text {
+  width: 500px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+.region__name {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
