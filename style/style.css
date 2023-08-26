@@ -155,6 +155,7 @@ body {
 }
 .region__img {
   width: 400px;
+  max-width: 100%;
 }
 .region__info {
   display: flex;

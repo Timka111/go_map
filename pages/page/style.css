@@ -1,3 +1,59 @@
-.fff {
-  margin-top: 500px;
+body {
+  background: url(https://photo.brestcity.com/2020/02/vbrest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: #fff;
+}
+.glav {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.glav__title {
+  font-size: 80px;
+}
+.info__slider {
+  width: 600px;
+  max-width: 100%;
+  height: 340px;
+  border-radius: 5px;
+  padding-top: 70px;
+}
+.info__section {
+  text-align: center;
+  padding-top: 70px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.story__info__title {
+  font-size: 35px;
+}
+.story__info {
+  width: 480px;
+  max-width: 100%;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.map {
+  text-align: center;
+  margin-top: 60px;
+}
+.map__map {
+  max-width: 100%;
+}
+.map__title {
+  font-size: 35px;
+  padding-bottom: 30px;
 }
