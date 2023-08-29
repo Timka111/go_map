@@ -39,10 +39,10 @@ body {
   font-size: 35px;
 }
 .story__info {
-  width: 480px;
+  width: 400px;
   max-width: 100%;
   font-size: 20px;
-  letter-spacing: 1px;
+
   line-height: 30px;
   font-weight: 600;
 }
