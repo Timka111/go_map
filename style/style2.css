@@ -2,12 +2,6 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("https://i.artfile.ru/1920x1246_1033014_[www.ArtFile.ru].jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  width: 100%;
 }
 .vibor {
   margin-top: 60px;
@@ -25,7 +19,7 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-  background: #fff;
+  background: #000;
 }
 .li::after {
   width: 0;
@@ -48,14 +42,14 @@ body {
 }
 .li {
   position: relative;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 18px;
   text-align: center;
   align-items: center;
   margin: 0 20px 0 20px;
   cursor: pointer;
-  background: #fff;
+  background: #000;
   margin-top: 10px;
   padding: 5px 5px;
   transition: background 0.4s linear;
@@ -64,8 +58,8 @@ body {
   height: 30px;
 }
 .li:hover {
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 @media screen and (max-width: 750px) {
   .card__section {
@@ -120,7 +114,7 @@ body {
   margin-right: 40px;
   margin-top: 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border: 2px solid #fff;
+  border: 2px solid #f44029;
 }
 @media (max-width: 700px) {
   .card {
