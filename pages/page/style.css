@@ -1,6 +1,6 @@
 .glav {
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,4 +62,31 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-top: 60px;
+}
+.interesant__info {
+  width: 100%;
+  max-width: 1200px;
+  font-size: 17px;
+  line-height: 24px;
+}
+.catadel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #c0c0c0;
+  align-items: center;
+}
+.citadel__i {
+  text-align: center;
+}
+.citadel__text {
+  width: 100%;
+  max-width: 600px;
+  font-size: 17px;
+  line-height: 25px;
+}
+.img__citadel {
+  width: 500px;
+  max-width: 100%;
 }
