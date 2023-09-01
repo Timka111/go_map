@@ -19,7 +19,7 @@
   max-width: 100%;
   height: 500px;
   max-height: 80vh;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 .info__section {
   text-align: center;
@@ -76,9 +76,11 @@
   flex-wrap: wrap;
   background: #c0c0c0;
   align-items: center;
+  margin-top: 80px;
 }
 .citadel__i {
   text-align: center;
+  padding: 20px 0;
 }
 .citadel__text {
   width: 100%;
@@ -86,7 +88,47 @@
   font-size: 17px;
   line-height: 25px;
 }
+.citadel__title {
+  font-size: 25px;
+}
 .img__citadel {
-  width: 500px;
+  width: 600px;
+  height: 300px;
   max-width: 100%;
+  padding: 20px 0;
+  padding-left: 10px;
+  border-radius: 15px;
+}
+#hiden {
+  display: none;
+}
+#hide__button {
+  font-size: 17px;
+  border: 1px solid #f44029;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 5px 10px;
+  transform: color 0.5s;
+  transition: background 0.5s;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#hide__button:hover {
+  background: #000;
+  color: #fff;
+}
+.interesant__img {
+  width: 1200px;
+  height: 75vh;
+  border-radius: 15px;
+  max-width: 100%;
+}
+@media screen and (max-width: 1225px) {
+  .img__citadel {
+    padding: 0;
+  }
+  .citadel__i {
+    padding: 0;
+  }
 }
