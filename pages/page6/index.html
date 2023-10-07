@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style/slider.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style/auto-slider.css" />
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
+
+    <title>Костел Святого Тадеуша</title>
+  </head>
+  <body>
+    <header class="header" id="">
+      <a href="index.html"
+        ><img src="../../img/Belarus_gerb_2021.jpg" alt="" class="header__img"
+      /></a>
+
+      <div class="header__block">
+        <nav>
+          <input type="checkbox" name="menu" id="btn-menu" />
+          <label class="label" for="btn-menu"
+            ><img src="../../img/menu-icon-13.png" alt=""
+          /></label>
+          <ul id="ul">
+            <li><a class="header__a" href="../../index.html">Главная</a></li>
+            <li>
+              <a class="header__a" href="../../index2.html">Популярное</a>
+            </li>
+            <li>
+              <a class="header__a" href="../../index3.html">Путешествия</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="glav">
+      <h1 class="glav__title">
+       Костел святого<br />
+        Тадеуша
+      </h1>
+    </div>
+
+    <div class="map">
+      <h2 class="map__title">Расположение</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d584535.1195411229!2d25.898240778125!3d55.089804900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dcc7986c46c5cf%3A0x35548fada8557b8a!2z0KbQtdGA0LrQvtCy0Ywg0KHQstGP0YLQvtCz0L4g0KTQsNC00LTQtdGP!5e0!3m2!1sru!2sby!4v1696693789200!5m2!1sru!2sby" width="1920" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map__map"></iframe>
+    </div>
+    <div class="info">
+      <div class="info__section">
+        <h2 class="story__info__title">История костела святого Тадеуша</h2>
+        <p class="story__info">
+          Храм был построен при миссии монахов-иезуитов, деньги на основание которой в Лучае выделила владелица имения Эльжбета-Магдалена Пузына, урожденная княгиня Огинская (?–1767). 
+          Эта образованная женщина в своем дворце в Лучае (который не сохранился) занималась астрономическими наблюдениями, значительную сумму она пожертвовала на основание обсерватории при Виленской иезуитской академии. 
+          <span id="dots"></span>
+          <span id="hiden">
+            Каменный барочно-классический костел в Лучае был построен в 1766–1776 годах на средства троюродного брата Эльжбеты Пузыны князя Тадеуша Огинского, которому она передала свое имение. Внутри храма – росписи на сводах и стенах, выполненные в технике гризайль с имитацией скульптурных рельефов.
+            Костел был закрыт в 1948 году и возвращен верующим в 1989-м. В 1992 году в пресбитерии храма настоятель Кшыштоф Пожарский установил плиту из черного мрамора с надписью в память «чуда возвращения этой ценной святыни после времен страданий и мучений».</span
+          >
+          <button onclick="readMore()" id="hide__button">Показать</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="1.jpg" alt="" class="info__slider" />
+        </div>
+        <div class="swiper-slide">
+          <img src="2.jpg" alt="" class="info__slider" />
+        </div>
+        <div class="swiper-slide">
+          <img src="3.jpg" alt="" class="info__slider" />
+        </div>
+      </div>
+    </div>
+
+    
+  
+    
+    
+   
+    <script src="slider.js"></script>
+    <script src="slide.js"></script>
+    <script src="script.js"></script>
+
+    <script src="../../sckript/header.js"></script>
+  </body>
+</html>
