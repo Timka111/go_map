@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-image: url(/go_map/img/glav.jpg);
+  background-image: url(../img/glav.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
